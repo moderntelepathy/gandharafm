@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Artifact : AI films and shorts</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Headerand Logo -->
+    <div id="header">
+        <img src="artifact.svg" alt="Logo" id="logo">
+    </div>
+
+    <!-- Arrow Buttons for Video Navigation -->
+    <button id="left-arrow" class="arrow-button">&#9664;</button> <!-- Unicode for left arrow -->
+    <button id="right-arrow" class="arrow-button">&#9654;</button> <!-- Unicode for right arrow -->
+
+    <div id="videoContainer"></div>
+    <div id="welcomeModal" class="modal">
+    <div class="modal-content">
+        <img src="artifact.svg" alt="Logo" class="modal-logo">
+        <p>Streaming the best music and creative expressions across the multiverse. Have one to add? Contact us: <a mailto="moderntelepathy@gmail.com">Submit your work</a></p>
+        <br>
+        <p>Controls:<br>
+            - Spacebar: Play/Pause<br>
+            - Right Arrow: Next Video<br>
+            - Left Arrow: Previous Video<br>
+            - Shift+Arrow: Fast-forward or Rewind<br>
+        </p>
+        <button id="startButton">Start</button>
+        <p>Or Press Enter</p>
+    </div>
+</div>
+<div id="videoInfo" class="video-info">
+    <h1 id="videoTitle"></h1>
+    <p id="videoCreator"></p>
+    <p id="videoDate"></p>
+</div>
+
+    <script src="script.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+</body>
+</html>
